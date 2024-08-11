@@ -14,27 +14,31 @@
 
     <main>
         <section>
-            <h2>Git Commands</h2>
-            <p><span><b>O que significa o git pull?</b></span><br>Git pull significa buscar no repositório o código-fonte mais atualizado da branch na qual você está trabalhando.</p>
+            <span><b>O que significa o git pull?</b></span><br>Git pull significa buscar no repositório o código-fonte mais atualizado da branch na qual você está trabalhando.</p>
             
-            <p><span>Acesse o histórico da sua branch atual (main):</span></p>
-            <p>Crie uma tag do seu projeto:</p>
-            <p>Inclua um título no index.html (ou outra modificação), crie uma branch com o nome <code>feature/inclusão-do-título</code>.</p>
+            <b>Acesse o histórico da sua branch atual (main):</b><br>
+            Crie uma tag do seu projeto:<br>
+            Inclua um título no index.html (ou outra modificação), crie uma branch com o nome <code>feature/inclusão-do-título</code>.<br><br>
             
-            <p><span>Como acessar uma branch?</span></p>
-            <p><span>Como trocar de branch?</span></p>
-            <p><span>Como deletar uma branch?</span></p>
+            <b>Como acessar uma branch?</b><br>Por padrão você ao abrir o projeto você já acessa a main <br>
+            <b>Como trocar de branch?</b><br> Para trocar a branch você deve digitar no terminal: git checkout feature/inclusão-do-título<br>
+            <b>Como deletar uma branch?</b> <br> Da pra deletar localmente com o comando git branch -d nome-da-branch<br>
             
-            <p>Entre na main branch e faça um merge da branch desejada para integrar ao main.</p>
+            Entre na main branch e faça um merge da branch desejada para integrar ao main.
             
-            <p>Para resolver o conflito do código, por que é preferível utilizar o rebase em vez do merge?</p>
-            <p><span>Como inserir apenas um commit de uma branch para a main?</span></p>
-            <p>Resete seu código até algum momento utilizando como parâmetro o hash da commit:</p>
+            <b>Para resolver o conflito do código, por que é preferível utilizar o rebase em vez do merge?</b><br>
+            O rebase é preferível ao merge em algumas situações porque:<br>
+            1 - o rebase mantém um histórico linear mais limpo, o que facilita o entendimento das mudanças e revisões<br>
+            2 - evita a criação de commits de merge, o que pode complicar o histórico de commits<br>
+            3 - permite reaplicar mudanças de uma branch em cima de outra, como se tivesse sido feita diretamente no ponto mais recente da branch base.<br>
+            Porém o rebase deve ser usado com cuidado, especialmente em branches compartilhadas, para evitar complicações com o histórico compartilhado.<br><br>
+            <b>Como inserir apenas um commit de uma branch para a main?</b><br>Você pode utilizar o cherry-pick, vendo no log do git vai ter um hash dos commits, pegue o log dele e de checkout na branch qual você quer realizar o commit, e rode o comando git cherry-pick #hash<br><br>
+            <b>Resete seu código até algum momento utilizando como parâmetro o hash da commit:  <code>git reset --hard #hash</code> </b><br>
             
-            <p>Crie um arquivo tipo txt e guarde em sua stash:</p>
+            <b>Crie um arquivo tipo txt e guarde em sua stash:</b><br><br>emi[~[e]]
             
-            <p><span>Como fazer um Pull-Request?</span></p>
-            <p><span>Como adicionar Reviewers em seu repositório:</span></p>
+            <b>Como fazer um Pull-Request?</b><br> Abra o github, clique em pull requests e adicione um novo selecionando a branch de origem e a branch de destino<br>
+            <b>Como adicionar Reviewers em seu repositório:</b><br>No Pull Request, clique em "Reviewers" no painel à direita e selecione os mesmos.
         </section>
     </main>
 </body>
